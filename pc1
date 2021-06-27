@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    float a;
+    float b;
+    float c;
+    float respuesta1, respuesta2;
+    float raiz;
+    float denominador;
+
+    printf("\n** Solucion de Ecuaciones de Segundo Grado **\n");
+
+    printf("\nA continuacion ingrese los valores solicitados: \n");
+
+
+
+    printf("\nIngrese el valor de a: ");
+    scanf("%f", &a);
+
+    printf("Ingrese el valor de b: ");
+    scanf("%f", &b);
+
+    printf("Ingrese el valor de c: ");
+    scanf("%f", &c);
+    raiz = sqrt(b * b - 4 * a * c);
+
+    denominador = 2 * a;
+
+    respuesta1      = (-b + raiz) / denominador;
+
+    respuesta2      = (-b - raiz) / denominador;
+
+    printf("\nEl valor de x1 es igual a:  = %.2f\nEl valor de x2 es igual a: = %.2f", respuesta1, respuesta2);
+
+
+
+    return 0;
+}
